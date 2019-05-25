@@ -1,10 +1,10 @@
-# duka - Dukascopy data downloader [![Build Status](https://travis-ci.org/giuse88/duka.svg?branch=master)](https://travis-ci.org/giuse88/duka)
+# altbars - Dukascopy data downloader with alternative bars
 
 Finding good Forex data is difficult or expensive. Dukascopy has made available an excellent [web tool](https://www.dukascopy.com/swiss/english/marketwatch/historical/) to download tick data for a large a variety of 
 Forex, CFD and commodities. This is awesome and extremely useful for people, like me, trying to study the Forex market. 
-However, it takes a lot of time to download a large data set from the website because you can download only one day per time. In order to solve this issue, I created **duka**.  
+However, it takes a lot of time to download a large data set from the website because you can download only one day per time. In order to solve this issue, giuse88 created **duka** and i forked it to introduce alternative bars and renamed it to **altbars** to make experimenting with alternative bars as easy as possible.  
 
-**duka** is a small terminal application that can be used to download ticks for a given date range from the Dukascopy historical data feed for one or more symbols. **duka** takes advantage of python threads and coroutine in order to speed up the download. It takes roughly 10m to download tick data for  one year for a given instrument. No bad :)
+**altbars** fork add Dr Marcos Lopez de Prado alternative bars from Advances in Financial Machine Learning book to the original **duka** repo which is a small terminal application that can be used to download ticks for a given date range from the Dukascopy historical data feed for one or more symbols. **duka** takes advantage of python threads and coroutine in order to speed up the download. It takes roughly 10m to download tick data for  one year for a given instrument.
 
 Key features :
  - Ticks data with volumes
@@ -12,6 +12,11 @@ Key features :
  - CSV output
  - multi-thread support
  - Large variety of symbols
+ - Alternative bars from Advances in Financial Machine Learning book by Dr Marcos Lopez de Prado:
+     - Dollar Bars
+     - Volume Bars
+     - Tick Bars
+     - Time Bars `as it always been`
 
 This is what **duka** looks like:
 
